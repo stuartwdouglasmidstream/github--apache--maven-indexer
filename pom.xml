@@ -82,7 +82,7 @@
     <surefire.version>3.2.1</surefire.version>
     <checkstyle.violation.ignore>MagicNumber,ParameterNumber,MethodLength,JavadocType,AvoidNestedBlocks,InterfaceIsType</checkstyle.violation.ignore>
     <maven.compiler.target>${javaVersion}</maven.compiler.target>
-    <slf4j.version>2.0.9</slf4j.version>
+    <slf4j.version>2.0.13</slf4j.version>
     <lucene.version>9.9.1</lucene.version>
     <project.build.outputTimestamp>2024-01-08T10:48:29Z</project.build.outputTimestamp>
     <failsafe.redirectTestOutputToFile>true</failsafe.redirectTestOutputToFile>
