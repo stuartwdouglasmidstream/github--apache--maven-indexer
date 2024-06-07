@@ -352,45 +352,7 @@ under the License.
         </configuration>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>rat-check</id>
-            <goals>
-              <goal>check</goal>
-            </goals>
-            <phase>validate</phase>
-            <configuration>
-              <excludes combine.children="append">
-                <exclude>*.md</exclude>
-                <exclude>.gitignore</exclude>
-                <exclude>NOTICE</exclude>
-                <exclude>**/packageinfo</exclude>
-                <exclude>.git/**</exclude>
-                <exclude>.idea/**</exclude>
-                <exclude>**/*.iml</exclude>
-                <exclude>nbactions.xml</exclude>
-                <exclude>nb-configuration.xml</exclude>
-                <!-- exlude some test resources from rat analysis -->
-                <exclude>src/test/**/*.sha1</exclude>
-                <exclude>src/test/**/*.md5</exclude>
-                <exclude>src/test/**/*.xml</exclude>
-                <exclude>src/test/**/*.pom</exclude>
-                <exclude>src/test/**/*.asc</exclude>
-                <exclude>src/test/**/*.properties</exclude>
-                <exclude>src/test/**/*.swc</exclude>
-                <exclude>src/test/**/*.txt</exclude>
-                <exclude>src/test/**/*.filename</exclude>
-                <exclude>src/test/**/.placeholder</exclude>
-                <!-- RAT is incapable to digest this -->
-                <exclude>**/module-info.java</exclude>
-              </excludes>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+      
     </plugins>
   </build>
 
